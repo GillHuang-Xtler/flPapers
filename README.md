@@ -160,6 +160,16 @@ Monte Carlo simulations for SV are computationally expensive and not guaranteed 
 
 Kernel SHAP is a computationally efficient approximation to Shapley values in higher dimensions which assumes the features are independent. Therefore, this paper extend the Kernel SHAP to handle dependent features by clustering SV corresponding to dependent features, improving the presentation of feature contribution for individual predictions.
 
+[IN15]
+[A_Multi-player_Game_for_Studying_Federated_Learnin](./Incentives/IN15_A_Multi-player_Game_for_Studying_Federated_Learnin.pdf)
+
+IJCAI: Multi-party Game Demonstration
+
+[IN16]
+[An-incentive-scheme-for-federated-learning-in-the-sky](./Incentives/IN16-An-incentive-scheme-for-federated-learning-in-the-sky.pdf)
+
+ Mobicom: Unmanned aerial vehicle
+
 
 ### Robustness
 
@@ -203,6 +213,35 @@ This article proposes an attack method in which the attacker makes the parameter
 
 The paper proposes an input matrix manipulation to conduct targeted local model poisoning backdoor in federated learning. When the global is about to converge, the attacker could inject a malicious model based on the difference of the clean global one. And it proved to be efficient even when the attacker does not know the global learning rate. 
 
+[P14] [Robust_Federated_Training_via_Collaborative_Machine_Teaching_using_Trusted_Instances](./Poison/p14_Robust_Federated_Training_via_Collaborative_Machine_Teaching_using_Trusted_Instances.pdf)
+
+AAAI: partial corrupted local data + verification
+
+
+[P15]
+[dba_distributed_backdoor_attacks_against_federated_learning](./Poison/P15_dba_distributed_backdoor_attacks_against_federated_learning.pdf)
+
+ICLR: distributed backdooring
+
+[P16]
+[Analyzing_Federated_Learning_through_an_Adversarial_Lens](./Poison/P16_Analyzing_Federated_Learning_through_an_Adversarial_Lens.pdf)
+
+ICML: model poisoning attacks
+
+[P17]
+[robust-federated-learning-the-case-of-affine-distribution-shifts-Paper](./Poison/P17-robust-federated-learning-the-case-of-affine-distribution-shifts-Paper.pdf)
+
+NIPS: defense for heterogenous data
+
+[P18]
+[attack-of-the-tails-yes-you-really-can-backdoor-federated-learning-Paper](./Posion/P18-attack-of-the-tails-yes-you-really-can-backdoor-federated-learning-Paper.pdf)
+
+NIPS: Edge-case backdoor
+
+[P19]
+[Comprehensive-Privacy-Analysis-of-Deep-Learning-Passive-and-Active-White-box-Inference-Attacks-against-Centralized-and-Federated-Learning](./Posion/P19_Comprehensive-Privacy-Analysis-of-Deep-Learning-Passive-and-Active-White-box-Inference-Attacks-against-Centralized-and-Federated-Learning.pdf)
+
+S&P: white-box inference attack
 
 
 ### Optimization_Distribution
