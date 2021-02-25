@@ -234,12 +234,12 @@ ICML: model poisoning attacks
 NIPS: defense for heterogenous data
 
 [P18]
-[attack-of-the-tails-yes-you-really-can-backdoor-federated-learning-Paper](./Posion/P18-attack-of-the-tails-yes-you-really-can-backdoor-federated-learning-Paper.pdf)
+[attack-of-the-tails-yes-you-really-can-backdoor-federated-learning-Paper](./Poison/P18-attack-of-the-tails-yes-you-really-can-backdoor-federated-learning-Paper.pdf)
 
 NIPS: Edge-case backdoor
 
 [P19]
-[Comprehensive-Privacy-Analysis-of-Deep-Learning-Passive-and-Active-White-box-Inference-Attacks-against-Centralized-and-Federated-Learning](./Posion/P19_Comprehensive-Privacy-Analysis-of-Deep-Learning-Passive-and-Active-White-box-Inference-Attacks-against-Centralized-and-Federated-Learning.pdf)
+[Comprehensive-Privacy-Analysis-of-Deep-Learning-Passive-and-Active-White-box-Inference-Attacks-against-Centralized-and-Federated-Learning](./Poison/P19_Comprehensive-Privacy-Analysis-of-Deep-Learning-Passive-and-Active-White-box-Inference-Attacks-against-Centralized-and-Federated-Learning.pdf)
 
 S&P: white-box inference attack
 
