@@ -138,6 +138,17 @@ Conferences and Journals Collection for Federated Learning from 2019 to 2021. Fo
 ## Related Works
 ### Incentives
 
+	```mermaid
+	graph TD
+	A(工业用地效率)-->B1(土地利用强度)
+	A-->B2(土地经济效益)
+	B1-->C1(容积率)
+	B1-->C2(建筑系数)
+	B1-->C3(亩均固定资本投入)
+	B2-->D1(亩均工业产值)
+	B2-->D2(亩均税收)
+	```
+
 [IN1] [Incentive Mechanism for Reliable Federated Learning: A Joint Optimization Approach to Combining Reputation and Contract Theory](./Incentives/1-Incentive-Mechanism-for-Reliable-Federated-Learning—A-Joint-Optimization-Approach-to-Combining-Reputation-and-Contract-Theory.pdf)
 
 This paper addresses the challenges of incentive mechanisms
@@ -200,7 +211,7 @@ This paper also values the feasibility of Shapley Value on federated contributio
 This paper proposes Fed-Influence, to measure contribution based on sub-model parameter without retrainig as well as a estimation algorithm. It works well on both convex and non-convex loss functions and does not require the  nal model to be optimal.
 
 [IN15]
-[A_Multi-player_Game_for_Studying_Federated_Learnin](./Incentives/IN15_A_Multi-player_Game_for_Studying_Federated_Learnin.pdf)
+[A_Multi-player_Game_for_Studying_Federated_Learning](./Incentives/IN15_A_Multi-player_Game_for_Studying_Federated_Learnin.pdf)
 
 IJCAI: Multi-party Game Demonstration
 
@@ -276,34 +287,44 @@ This article proposes an attack method in which the attacker makes the parameter
 The paper proposes an input matrix manipulation to conduct targeted local model poisoning backdoor in federated learning. When the global is about to converge, the attacker could inject a malicious model based on the difference of the clean global one. And it proved to be efficient even when the attacker does not know the global learning rate. 
 
 [P14] [Robust_Federated_Training_via_Collaborative_Machine_Teaching_using_Trusted_Instances](./Poison/P14_Robust_Federated_Training_via_Collaborative_Machine_Teaching_using_Trusted_Instances.pdf)
+AAAI
 
-AAAI: partial corrupted local data + verification
+partial corrupted local data + verification
 
 
 [P15]
 [dba_distributed_backdoor_attacks_against_federated_learning](./Poison/P15_dba_distributed_backdoor_attacks_against_federated_learning.pdf)
+ICLR
 
-ICLR: distributed backdooring
+distributed backdooring
 
 [P16]
 [Analyzing_Federated_Learning_through_an_Adversarial_Lens](./Poison/P16_Analyzing_Federated_Learning_through_an_Adversarial_Lens.pdf)
+ICML
 
-ICML: model poisoning attacks
+model poisoning attacks
 
 [P17]
 [robust-federated-learning-the-case-of-affine-distribution-shifts-Paper](./Poison/P17-robust-federated-learning-the-case-of-affine-distribution-shifts-Paper.pdf)
+NIPS
 
-NIPS: defense for heterogenous data
+defense for heterogenous data
 
 [P18]
 [attack-of-the-tails-yes-you-really-can-backdoor-federated-learning-Paper](./Poison/P18-attack-of-the-tails-yes-you-really-can-backdoor-federated-learning-Paper.pdf)
+NIPS
 
-NIPS: Edge-case backdoor
+Edge-case backdoor
 
 [P19]
 [Comprehensive-Privacy-Analysis-of-Deep-Learning-Passive-and-Active-White-box-Inference-Attacks-against-Centralized-and-Federated-Learning](./Poison/P19_Comprehensive-Privacy-Analysis-of-Deep-Learning-Passive-and-Active-White-box-Inference-Attacks-against-Centralized-and-Federated-Learning.pdf)
+S&P
 
-S&P: white-box inference attack
+white-box inference attack
+
+[P20] [FLTrust: Byzantine-robust Federated Learning via Trust Bootstrapping
+](./Poison/P20-FLTrust-Byzantine-robust-Federated-Learning-via-Trust-Bootstrapping.pdf)
+NDSS
 
 
 ### Optimization_Distribution
