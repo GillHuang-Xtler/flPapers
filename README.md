@@ -138,16 +138,17 @@ Conferences and Journals Collection for Federated Learning from 2019 to 2021. Fo
 ## Related Works
 ### Incentives
 
-	```mermaid
-	graph TD
-	A(工业用地效率)-->B1(土地利用强度)
-	A-->B2(土地经济效益)
-	B1-->C1(容积率)
-	B1-->C2(建筑系数)
-	B1-->C3(亩均固定资本投入)
-	B2-->D1(亩均工业产值)
-	B2-->D2(亩均税收)
-	```
+```mermaid
+graph LR
+A(工业用地效率)-->B1(土地利用强度)
+A-->B2(土地经济效益)
+B1-->C1(容积率)
+B1-->C2(建筑系数)
+B1-->C3(亩均固定资本投入)
+B2-->D1(亩均工业产值)
+B2-->D2(亩均税收)
+```
+
 
 [IN1] [Incentive Mechanism for Reliable Federated Learning: A Joint Optimization Approach to Combining Reputation and Contract Theory](./Incentives/1-Incentive-Mechanism-for-Reliable-Federated-Learning—A-Joint-Optimization-Approach-to-Combining-Reputation-and-Contract-Theory.pdf)
 
@@ -326,6 +327,11 @@ white-box inference attack
 ](./Poison/P20-FLTrust-Byzantine-robust-Federated-Learning-via-Trust-Bootstrapping.pdf)
 NDSS
 
+Rather than performing anomaly detection in local model, this paper build bootstraping trust by compute the cosine similarity beteween server updates and clients' updates, which is named as trust score. The weighted aggregation is based on trust scores and updates normalized by the magnitude of server updates.
+
+[P21] [Manipulating the Byzantine: Optimizing Model Poisoning Attacks and Defenses for Federated Learning
+](./Poison/P21-Manipulating-the-Byzantine-Optimizing-Model-Poisoning-Attacks-and-Defenses-for-Federated-Learning.pdf)
+NDSS
 
 ### Optimization_Distribution
 
