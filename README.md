@@ -140,15 +140,21 @@ Conferences and Journals Collection for Federated Learning from 2019 to 2021. Fo
 
 ```mermaid
 graph LR
-A(工业用地效率)-->B1(土地利用强度)
-A-->B2(土地经济效益)
-B1-->C1(容积率)
-B1-->C2(建筑系数)
-B1-->C3(亩均固定资本投入)
-B2-->D1(亩均工业产值)
-B2-->D2(亩均税收)
+A(FL Incentive)-->B1(Self-reported)
+A-->B2(Marginal loss)
+A-->B3(Similarity)
+B1-->C1(Stackberg game)
+B2-->D1(Influence-2,6)
+B2-->D2(Shapley Value-2,11)
+D2-->E1(Blockchain-10)
+B3-->F1(Reputation)
+B3-->F2(Cross-client labeling-5)
+C1-->G1(Communication efficiency-8,9)
+C1-->G2(Relay strategy-3)
+C1-->G3(Waiting regret-4)
+F1-->H1(Contract theory)
+H1-->I2(Reliability-1)
 ```
-
 
 [IN1] [Incentive Mechanism for Reliable Federated Learning: A Joint Optimization Approach to Combining Reputation and Contract Theory](./Incentives/1-Incentive-Mechanism-for-Reliable-Federated-Learning—A-Joint-Optimization-Approach-to-Combining-Reputation-and-Contract-Theory.pdf)
 
@@ -222,6 +228,8 @@ IJCAI: Multi-party Game Demonstration
  Mobicom: Unmanned aerial vehicle
 
 
+#### Improvements for Shapley Value
+
 [S1] [Explaining prediction models and individual predictions with feature contributions.](https://link.springer.com/article/10.1007/s10115-013-0679-x)
 
 In order to save the exponential calculation of Shapley Value, This paper apply Monte Carlo sampling to get the approximation of Shapley Value by averaging marginal contribution with random order generation under probability.
@@ -247,6 +255,24 @@ Kernel SHAP is a computationally efficient approximation to Shapley values in hi
 
 
 ### Robustness
+
+```mermaid
+graph LR
+A(Poisoning)-->B1(Data Poisoning)
+A-->B2(Local Model Poisoning)
+B1-->C1(Federated)
+B1-->C2(Centralized)
+B2-->D1(2)
+B2-->D2(backdoor-8)
+C1-->G1(Label flipping-1)
+C1-->G2(3)
+C1-->G3(Multi-task-5)
+C2-->H1(3)
+C2-->H2(4)
+C2-->H3(Multi-class back gradient optimization-6)
+C2-->H4(7)
+```
+
 
 [P1] [Data Poisoning Attacks Against
 Federated Learning Systems.](./Poison/P1_Data_Poisoning_Attacks_Against_Federated_Learning_Systems.pdf)
