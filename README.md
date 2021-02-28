@@ -264,6 +264,7 @@ B1-->C1(Federated)
 B1-->C2(Centralized)
 B2-->D1(2)
 B2-->D2(backdoor-8)
+B2-->D3(21)
 C1-->G1(Label flipping-1)
 C1-->G2(3)
 C1-->G3(Multi-task-5)
@@ -313,7 +314,7 @@ This article proposes an attack method in which the attacker makes the parameter
 
 The paper proposes an input matrix manipulation to conduct targeted local model poisoning backdoor in federated learning. When the global is about to converge, the attacker could inject a malicious model based on the difference of the clean global one. And it proved to be efficient even when the attacker does not know the global learning rate. 
 
-[P14] [Robust_Federated_Training_via_Collaborative_Machine_Teaching_using_Trusted_Instances](./Poison/P14_Robust_Federated_Training_via_Collaborative_Machine_Teaching_using_Trusted_Instances.pdf)
+[P14] [Robust Federated Training via Collaborative Machine Teaching using Trusted Instances](./Poison/P14_Robust_Federated_Training_via_Collaborative_Machine_Teaching_using_Trusted_Instances.pdf)
 AAAI
 
 partial corrupted local data + verification
@@ -358,6 +359,8 @@ Rather than performing anomaly detection in local model, this paper build bootst
 [P21] [Manipulating the Byzantine: Optimizing Model Poisoning Attacks and Defenses for Federated Learning
 ](./Poison/P21-Manipulating-the-Byzantine-Optimizing-Model-Poisoning-Attacks-and-Defenses-for-Federated-Learning.pdf)
 NDSS
+
+This paper presents a generic framework for model poisoning attacks and a novel defense   called divide-and-conquer (DnC) on FL. The key idea of its generic poisoning is that they introduce perturbation vectors and optimize the scaling factor $\gamma$ in both AGR-tailored and AGR-agnostic manners. DnC applies a singular value decomposition (SVD) based spectral methods to detect and remove outliers.
 
 ### Optimization_Distribution
 
