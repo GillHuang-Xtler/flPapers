@@ -324,7 +324,7 @@ partial corrupted local data + verification
 [dba_distributed_backdoor_attacks_against_federated_learning](./Poison/P15_dba_distributed_backdoor_attacks_against_federated_learning.pdf)
 ICLR
 
-distributed backdooring
+Instead of applying the same trigger in the attackers' datasets in [P8], this paper studies the distributed triggers (multiple triggers for subtasks) in FL, which can be more insidious and hard to detect. Additionally, the impact of triggers factors (eg. size, gap, location) are studied.
 
 [P16]
 [Analyzing_Federated_Learning_through_an_Adversarial_Lens](./Poison/P16_Analyzing_Federated_Learning_through_an_Adversarial_Lens.pdf)
