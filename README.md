@@ -317,11 +317,11 @@ The paper proposes an input matrix manipulation to conduct targeted local model 
 [P14] [Robust Federated Training via Collaborative Machine Teaching using Trusted Instances](./Poison/P14_Robust_Federated_Training_via_Collaborative_Machine_Teaching_using_Trusted_Instances.pdf)
 AAAI
 
-partial corrupted local data + verification
+This paper considers partial corrupted local data while the rest fraction is trusted in FL. The clients are organized to jointly tune the corrupted training data set, such that the model learnt with the tuned training set by the server predicts consistent targets as the trusted instances. More specifically, we adopt two types of training data tuning operations: crafting the training instances and subset-selecting the training set.
 
 
 [P15]
-[dba_distributed_backdoor_attacks_against_federated_learning](./Poison/P15_dba_distributed_backdoor_attacks_against_federated_learning.pdf)
+[dba distributed backdoor attacks against federated learning](./Poison/P15_dba_distributed_backdoor_attacks_against_federated_learning.pdf)
 ICLR
 
 Instead of applying the same trigger in the attackers' datasets in [P8], this paper studies the distributed triggers (multiple triggers for subtasks) in FL, which can be more insidious and hard to detect. Additionally, the impact of triggers factors (eg. size, gap, location) are studied.
