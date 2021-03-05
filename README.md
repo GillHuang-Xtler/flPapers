@@ -258,16 +258,19 @@ Kernel SHAP is a computationally efficient approximation to Shapley values in hi
 
 ```mermaid
 graph LR
-A(Poisoning)-->B1(Data Poisoning)
+A(Robustness)-->B1(Data Poisoning)
 A-->B2(Local Model Poisoning)
 B1-->C1(Federated)
 B1-->C2(Centralized)
 B2-->D1(2)
 B2-->D2(backdoor-8)
 B2-->D3(21)
+B2-->D4(distributed backddor-15)
+B2-->D5(alternative minimization and parameter estimation-16)
 C1-->G1(Label flipping-1)
 C1-->G2(3)
 C1-->G3(Multi-task-5)
+C1-->G4(Partial corrupted data-14)
 C2-->H1(3)
 C2-->H2(4)
 C2-->H3(Multi-class back gradient optimization-6)
@@ -330,7 +333,10 @@ Instead of applying the same trigger in the attackers' datasets in [P8], this pa
 [Analyzing_Federated_Learning_through_an_Adversarial_Lens](./Poison/P16_Analyzing_Federated_Learning_through_an_Adversarial_Lens.pdf)
 ICML
 
-model poisoning attacks
+1. FedAvg boost the malicious agent’s update to overcome the effects of other agents’ updates by K times with E=5;
+2. propose an alternating minimization strategy, which alternately optimizes for the stealth objectives and the adversarial objective; 
+3. using parameter estimation for the benign agents’ updates to improve on attack success by averaging methods assuming the cumulative updates were the same at each step for benigns;  
+4. use a suite of interpretability techniques to generate visual explanations for both benign and malicious models to demonstrate indistinguishability.
 
 [P17]
 [robust-federated-learning-the-case-of-affine-distribution-shifts-Paper](./Poison/P17-robust-federated-learning-the-case-of-affine-distribution-shifts-Paper.pdf)
