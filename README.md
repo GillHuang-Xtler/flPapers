@@ -333,22 +333,19 @@ Instead of applying the same trigger in the attackers' datasets in [P8], this pa
 [Analyzing_Federated_Learning_through_an_Adversarial_Lens](./Poison/P16_Analyzing_Federated_Learning_through_an_Adversarial_Lens.pdf)
 ICML
 
-1. FedAvg boost the malicious agent’s update to overcome the effects of other agents’ updates by K times with E=5;
+1. FedAvg, boost the malicious agent’s update to overcome the effects of other agents’ updates by K times with E=5;
 2. propose an alternating minimization strategy, which alternately optimizes for the stealth objectives and the adversarial objective; 
 3. using parameter estimation for the benign agents’ updates to improve on attack success by averaging methods assuming the cumulative updates were the same at each step for benigns;  
 4. use a suite of interpretability techniques to generate visual explanations for both benign and malicious models to demonstrate indistinguishability.
 
 [P17]
-[robust-federated-learning-the-case-of-affine-distribution-shifts-Paper](./Poison/P17-robust-federated-learning-the-case-of-affine-distribution-shifts-Paper.pdf)
-NIPS
-
-defense for heterogenous data
 
 [P18]
 [attack-of-the-tails-yes-you-really-can-backdoor-federated-learning-Paper](./Poison/P18-attack-of-the-tails-yes-you-really-can-backdoor-federated-learning-Paper.pdf)
 NIPS
 
-Edge-case backdoor
+This paper concludes that FL systems can NOT be tailored to be robust against backdoors.
+
 
 [P19]
 [Comprehensive-Privacy-Analysis-of-Deep-Learning-Passive-and-Active-White-box-Inference-Attacks-against-Centralized-and-Federated-Learning](./Poison/P19_Comprehensive-Privacy-Analysis-of-Deep-Learning-Passive-and-Active-White-box-Inference-Attacks-against-Centralized-and-Federated-Learning.pdf)
@@ -370,10 +367,26 @@ This paper presents a generic framework for model poisoning attacks and a novel 
 
 ### Optimization_Distribution
 
+```mermaid
+graph LR
+A(Optimization)-->B1(Distribution)
+A-->B2(..)
+B1-->C1(Data heterogenous)
+B1-->C2(..)
+C1-->D1(affline-9)
+C1-->D2(size & non-iid -8)
+```
+
 
 [A8] [Self-Balancing Federated Learning With Global Imbalanced Data in Mobile Systems](./Optimization_Distribution/A8-Self-Balancing-Federated-Learning-With-Global-Imbalanced-Data-in-Mobile-Systems.pdf)
 
 The Astraea framework counterweighs the training of FL with imbalanced datasets by two strategies. First, before training the model, Astraea performs data augmentation to alleviate global imbalance. Second, Astraea proposes to use some mediators to reschedule the training of clients according to the KLD between the mediators and the uniform distribution.
+
+[A9]
+[robust-federated-learning-the-case-of-affine-distribution-shifts-Paper](./Optimization_Distribution/A9-robust-federated-learning-the-case-of-affine-distribution-shifts-Paper.pdf)
+NIPS
+
+This paper achieves satisfactory performance against distribution shifts in users’ samples (considering a structured affine distribution shift). To address this problem, they propose FLRA framework with a fast and efficient optimization method and provide convergence and performance guarantees via a gradient Descent Ascent (GDA) method. They further prove generalization error bounds for the learnt classifier to show proper generalization from empirical distribution of samples to the true underlying distribution.
 
 [ST1] [Client Selection for Federated Learning with
 Heterogeneous Resources in Mobile Edge](./Optimization_Distribution/St1_Client_Selection_for_Federated_Learning_with_Heterogeneous_Resources_in_Mobile_Edge.pdf)
