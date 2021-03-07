@@ -344,14 +344,26 @@ ICML
 [attack-of-the-tails-yes-you-really-can-backdoor-federated-learning-Paper](./Poison/P18-attack-of-the-tails-yes-you-really-can-backdoor-federated-learning-Paper.pdf)
 NIPS
 
-This paper concludes that FL systems can NOT be tailored to be robust against backdoors.
+This paper concludes that FL systems can NOT be tailored to be robust against backdoors. And it provides edge-case backdoors which forces a model to misclassify on seemingly easy inputs that are however unlikely to be part of the training, or test data, i.e., they live on the tail of the input distribution.
 
 
 [P19]
 [Comprehensive-Privacy-Analysis-of-Deep-Learning-Passive-and-Active-White-box-Inference-Attacks-against-Centralized-and-Federated-Learning](./Poison/P19_Comprehensive-Privacy-Analysis-of-Deep-Learning-Passive-and-Active-White-box-Inference-Attacks-against-Centralized-and-Federated-Learning.pdf)
 S&P
 
-white-box inference attack
+This paper proposes a white-box membership inference attacks, one observation from this paper is that latter layer leaks more information than the former, however the leakage of activation layer is similar to output layer. So the results of white-box and black-box using activation information are similar. It design deep learning attack models using the gradient vector over all parameters on the target data point as the main feature for the attack. The architecture (simple CNN + FCN) processes extracted (gradient) features from different layers of the target model separately, and combines their information to compute the membership probability of a target data point.  Further， it designs an active attack in the federated learning setting, the adversary can actively push SGD to leak even more information about the participants’ data. 
+```mermaid
+graph LR
+A(Inference attack)-->B1(Membership)
+A-->B2(Reconstructing)
+B1-->C1(Black-box)
+B1-->C2(White-box)
+
+```
+
+(Reconstructing  Goal: infer attributes of the records in the training set)
+
+(Membership Goal: infer if a particular individual data record was included in the training dataset)
 
 [P20] [FLTrust: Byzantine-robust Federated Learning via Trust Bootstrapping
 ](./Poison/P20-FLTrust-Byzantine-robust-Federated-Learning-via-Trust-Bootstrapping.pdf)
