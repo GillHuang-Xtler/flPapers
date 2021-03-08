@@ -258,7 +258,7 @@ Kernel SHAP is a computationally efficient approximation to Shapley values in hi
 
 ```mermaid
 graph LR
-A(Robustness)-->B1(Data Poisoning)
+A(Robustness-22)-->B1(Data Poisoning)
 A-->B2(Local Model Poisoning)
 B1-->C1(Federated)
 B1-->C2(Centralized)
@@ -276,7 +276,7 @@ C2-->H2(4)
 C2-->H3(Multi-class back gradient optimization-6)
 C2-->H4(7)
 ```
-
+![overview](./imgs/poison_overview.png)
 
 [P1] [Data Poisoning Attacks Against
 Federated Learning Systems.](./Poison/P1_Data_Poisoning_Attacks_Against_Federated_Learning_Systems.pdf)
@@ -352,18 +352,14 @@ This paper concludes that FL systems can NOT be tailored to be robust against ba
 S&P
 
 This paper proposes a white-box membership inference attacks, one observation from this paper is that latter layer leaks more information than the former, however the leakage of activation layer is similar to output layer. So the results of white-box and black-box using activation information are similar. It design deep learning attack models using the gradient vector over all parameters on the target data point as the main feature for the attack. The architecture (simple CNN + FCN) processes extracted (gradient) features from different layers of the target model separately, and combines their information to compute the membership probability of a target data point.  Further， it designs an active attack in the federated learning setting, the adversary can actively push SGD to leak even more information about the participants’ data. 
+
 ```mermaid
 graph LR
 A(Inference attack)-->B1(Membership)
 A-->B2(Reconstructing)
 B1-->C1(Black-box)
 B1-->C2(White-box)
-
 ```
-
-(Reconstructing  Goal: infer attributes of the records in the training set)
-
-(Membership Goal: infer if a particular individual data record was included in the training dataset)
 
 [P20] [FLTrust: Byzantine-robust Federated Learning via Trust Bootstrapping
 ](./Poison/P20-FLTrust-Byzantine-robust-Federated-Learning-via-Trust-Bootstrapping.pdf)
@@ -376,6 +372,12 @@ Rather than performing anomaly detection in local model, this paper build bootst
 NDSS
 
 This paper presents a generic framework for model poisoning attacks and a novel defense   called divide-and-conquer (DnC) on FL. The key idea of its generic poisoning is that they introduce perturbation vectors and optimize the scaling factor $\gamma$ in both AGR-tailored and AGR-agnostic manners. DnC applies a singular value decomposition (SVD) based spectral methods to detect and remove outliers.
+
+[P22] [Threats to Federated Learning: A Survey](./Poison/P22_Threats-to-Federated-Learning-A-Survey.pdf)
+
+[P23] [Exploiting Unintended Feature Leakage in Collaborative Learning](./poison/P23-Exploiting-Unintended-Feature-Leakage-in-Collaborative-Learning.pdf)
+
+
 
 ### Optimization_Distribution
 
