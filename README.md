@@ -138,23 +138,6 @@ Conferences and Journals Collection for Federated Learning from 2019 to 2021. Fo
 ## Related Works
 ### Incentives
 
-```mermaid
-graph LR
-A(FL Incentive)-->B1(Self-reported)
-A-->B2(Marginal loss)
-A-->B3(Similarity)
-B1-->C1(Stackberg game)
-B2-->D1(Influence-2,6)
-B2-->D2(Shapley Value-2,11)
-D2-->E1(Blockchain-10)
-B3-->F1(Reputation)
-B3-->F2(Cross-client labeling-5)
-C1-->G1(Communication efficiency-8,9)
-C1-->G2(Relay strategy-3)
-C1-->G3(Waiting regret-4)
-F1-->H1(Contract theory)
-H1-->I2(Reliability-1)
-```
 
 [IN1] [Incentive Mechanism for Reliable Federated Learning: A Joint Optimization Approach to Combining Reputation and Contract Theory](./Incentives/1-Incentive-Mechanism-for-Reliable-Federated-Learning—A-Joint-Optimization-Approach-to-Combining-Reputation-and-Contract-Theory.pdf)
 
@@ -228,6 +211,7 @@ IJCAI: Multi-party Game Demonstration
  Mobicom: Unmanned aerial vehicle
 
 
+
 #### Improvements for Shapley Value
 
 [S1] [Explaining prediction models and individual predictions with feature contributions.](https://link.springer.com/article/10.1007/s10115-013-0679-x)
@@ -253,29 +237,26 @@ Monte Carlo simulations for SV are computationally expensive and not guaranteed 
 
 Kernel SHAP is a computationally efficient approximation to Shapley values in higher dimensions which assumes the features are independent. Therefore, this paper extend the Kernel SHAP to handle dependent features by clustering SV corresponding to dependent features, improving the presentation of feature contribution for individual predictions.
 
+```mermaid
+graph LR
+A(FL Incentive)-->B1(Self-reported)
+A-->B2(Marginal loss)
+A-->B3(Similarity)
+B1-->C1(Stackberg game)
+B2-->D1(Influence-2,6)
+B2-->D2(Shapley Value-2,11)
+D2-->E1(Blockchain-10)
+B3-->F1(Reputation)
+B3-->F2(Cross-client labeling-5)
+C1-->G1(Communication efficiency-8,9)
+C1-->G2(Relay strategy-3)
+C1-->G3(Waiting regret-4)
+F1-->H1(Contract theory)
+H1-->I2(Reliability-1)
+```
 
 ### Robustness
 
-```mermaid
-graph LR
-A(Robustness-22)-->B1(Data Poisoning)
-A-->B2(Local Model Poisoning)
-B1-->C1(Federated)
-B1-->C2(Centralized)
-B2-->D1(2)
-B2-->D2(backdoor-8)
-B2-->D3(21)
-B2-->D4(distributed backddor-15)
-B2-->D5(alternative minimization and parameter estimation-16)
-C1-->G1(Label flipping-1)
-C1-->G2(3)
-C1-->G3(Multi-task-5)
-C1-->G4(Partial corrupted data-14)
-C2-->H1(3)
-C2-->H2(4)
-C2-->H3(Multi-class back gradient optimization-6)
-C2-->H4(7)
-```
 ![overview](./imgs/poison_overview.png)
 
 [P1] [Data Poisoning Attacks Against
@@ -353,14 +334,6 @@ S&P
 
 This paper proposes a white-box membership inference attacks, one observation from this paper is that latter layer leaks more information than the former, however the leakage of activation layer is similar to output layer. So the results of white-box and black-box using activation information are similar. It design deep learning attack models using the gradient vector over all parameters on the target data point as the main feature for the attack. The architecture (simple CNN + FCN) processes extracted (gradient) features from different layers of the target model separately, and combines their information to compute the membership probability of a target data point.  Further， it designs an active attack in the federated learning setting, the adversary can actively push SGD to leak even more information about the participants’ data. 
 
-```mermaid
-graph LR
-A(Inference attack)-->B1(Membership)
-A-->B2(Reconstructing)
-B1-->C1(Black-box)
-B1-->C2(White-box)
-```
-
 [P20] [FLTrust: Byzantine-robust Federated Learning via Trust Bootstrapping
 ](./Poison/P20-FLTrust-Byzantine-robust-Federated-Learning-via-Trust-Bootstrapping.pdf)
 NDSS
@@ -378,18 +351,29 @@ This paper presents a generic framework for model poisoning attacks and a novel 
 [P23] [Exploiting Unintended Feature Leakage in Collaborative Learning](./poison/P23-Exploiting-Unintended-Feature-Leakage-in-Collaborative-Learning.pdf)
 
 
+```mermaid
+graph LR
+A(Robustness-22)-->B1(Data Poisoning)
+A-->B2(Local Model Poisoning)
+B1-->C1(Federated)
+B1-->C2(Centralized)
+B2-->D1(2)
+B2-->D2(backdoor-8)
+B2-->D3(21)
+B2-->D4(distributed backddor-15)
+B2-->D5(alternative minimization and parameter estimation-16)
+C1-->G1(Label flipping-1)
+C1-->G2(3)
+C1-->G3(Multi-task-5)
+C1-->G4(Partial corrupted data-14)
+C2-->H1(3)
+C2-->H2(4)
+C2-->H3(Multi-class back gradient optimization-6)
+C2-->H4(7)
+```
 
 ### Optimization_Distribution
 
-```mermaid
-graph LR
-A(Optimization)-->B1(Distribution)
-A-->B2(..)
-B1-->C1(Data heterogenous)
-B1-->C2(..)
-C1-->D1(affline-9)
-C1-->D2(size & non-iid -8)
-```
 
 
 [A8] [Self-Balancing Federated Learning With Global Imbalanced Data in Mobile Systems](./Optimization_Distribution/A8-Self-Balancing-Federated-Learning-With-Global-Imbalanced-Data-in-Mobile-Systems.pdf)
@@ -406,5 +390,17 @@ This paper achieves satisfactory performance against distribution shifts in user
 Heterogeneous Resources in Mobile Edge](./Optimization_Distribution/St1_Client_Selection_for_Federated_Learning_with_Heterogeneous_Resources_in_Mobile_Edge.pdf)
 
 This paper propose a client selection strategy suitable for heterogeneous nodes in distributed systems. It gives a submission deadline in federated learning in order to reduce the impact of staggers. The deadline has been choosen by experience.
+
+
+
+```mermaid
+graph LR
+A(Optimization)-->B1(Distribution)
+A-->B2(..)
+B1-->C1(Data heterogenous)
+B1-->C2(..)
+C1-->D1(affline-9)
+C1-->D2(size & non-iid -8)
+```
 
 
