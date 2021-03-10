@@ -71,20 +71,20 @@ Conferences and Journals Collection for Federated Learning from 2019 to 2021. Fo
 
 |  Impact Factor > 5.0   | IF |
 |  ----  | ----  | ----  | ----  |
-|  Future Generation Computer Systems|5.6
-|   IEEE Internet of Things|9.9
-|  Information Science|5.9
-|  IEEE Journal on Selected Areas in Communications|11.4
-|  Knowledge-Based Systems|5.9
-|  IEEE Transactions on Information Forensics and Security|6.0
-|  IEEE Transactions on Industrial Informatics|9.1
-|  IEEE Transactions on Signal Processing|5.0
-|  IEEE Transactions on Wireless Communications|6.8
-|  Communications of the ACM|7.0
-|  IEEE Communications Magazine|11.1
-|  IEEE Network|8.8
-|  IEEE Transactions on Neural Networks and Learning Systems|8.8
-|  IEEE Transactions on Vehicular Technology|5.4
+|  Future Generation Computer Systems|5.6 |
+|   IEEE Internet of Things|9.9 | 
+|  Information Science|5.9 |
+|  IEEE Journal on Selected Areas in Communications|11.4 |
+|  Knowledge-Based Systems|5.9 |
+|  IEEE Transactions on Information Forensics and Security|6.0 |
+|  IEEE Transactions on Industrial Informatics|9.1 |
+|  IEEE Transactions on Signal Processing|5.0 |
+|  IEEE Transactions on Wireless Communications|6.8 |
+|  Communications of the ACM|7.0 |
+|  IEEE Communications Magazine|11.1 |
+|  IEEE Network|8.8 |
+|  IEEE Transactions on Neural Networks and Learning Systems|8.8 |
+|  IEEE Transactions on Vehicular Technology|5.4 |
 
 | Others | 
 | --- |
