@@ -68,7 +68,7 @@ ICLR
 why, what, goal = "[P8]"
 how = "use distributed trigger rather than one trigger to achieve better occultation"
 ```
-<img src = "./imgs/P15.png", width = 80% \>
+<img src = "./imgs/P15.png", width = 80% />
 
 Instead of applying the same trigger in the attackers' datasets in [P8], this paper studies the distributed triggers (multiple triggers for subtasks) in FL, which can be more insidious and hard to detect. Additionally, the impact of triggers factors (eg. size, gap, location) are studied.
 
