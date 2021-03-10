@@ -95,7 +95,7 @@ conclusion = "model poisoning attacks are much more effective than data poisonin
 [attack-of-the-tails-yes-you-really-can-backdoor-federated-learning-Paper](./Poison/P18-attack-of-the-tails-yes-you-really-can-backdoor-federated-learning-Paper.pdf)
 NIPS
 
-<img src = "./imgs/P18-1.png", width = ”80%“ />
+<img src = "./imgs/P18-1.png" width = ”80%“ />
 
 
 ```python
@@ -125,7 +125,7 @@ goal = "white-box membership inference attacks"
 why = "the leakage of activation layer is similar to output layer"
 how = "train a binary classification model using gradients, hidden layers, output, loss"
 ```
-<img src = "./imgs/P19-1.png", width = "50%" /><img src = "./imgs/P19-2.png", width = "50%" />
+<img src = "./imgs/P19-1.png" width = "50%" /><img src = "./imgs/P19-2.png" width = "50%" />
 
 
 [P20] [FLTrust: Byzantine-robust Federated Learning via Trust Bootstrapping
@@ -149,7 +149,7 @@ poisoning: introduce perturbation vectors and optimize the scaling factor
 defense: singular value decomposition based spectral methods
 """
 ```
-<img src = "./imgs/P21-1.png", width = "100%" />
+<img src = "./imgs/P21-1.png" width = "100%" />
 
 [P22] [Threats to Federated Learning: A Survey](./Poison/P22_Threats-to-Federated-Learning-A-Survey.pdf)
 
