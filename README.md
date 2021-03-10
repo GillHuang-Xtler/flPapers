@@ -70,7 +70,7 @@ Conferences and Journals Collection for Federated Learning from 2019 to 2021. Fo
 ## Journals
 
 |  Impact Factor > 5.0   | IF |
-|  ----  | ----  | ----  | ----  |
+|  ----   | ----  |
 |  Future Generation Computer Systems|5.6 |
 |   IEEE Internet of Things|9.9 | 
 |  Information Science|5.9 |
