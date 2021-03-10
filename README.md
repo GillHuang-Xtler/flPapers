@@ -301,17 +301,27 @@ This article proposes an attack method in which the attacker makes the parameter
 
 [P8] [How To Backdoor Federated Learning](./Poison/P8_How_To_Backdoor_Federated_Learning.pdf)
 
+<img src="./imgs/P8-1.png" width = "70%" />
+<img src="./imgs/P8-2.png" width = "50%" />
+
+
 The paper proposes an input matrix manipulation to conduct targeted local model poisoning backdoor in federated learning. When the global is about to converge, the attacker could inject a malicious model based on the difference of the clean global one. And it proved to be efficient even when the attacker does not know the global learning rate. 
 
 [P14] [Robust Federated Training via Collaborative Machine Teaching using Trusted Instances](./Poison/P14_Robust_Federated_Training_via_Collaborative_Machine_Teaching_using_Trusted_Instances.pdf)
 AAAI
 
-This paper considers partial corrupted local data while the rest fraction is trusted in FL. The clients are organized to jointly tune the corrupted training data set, such that the model learnt with the tuned training set by the server predicts consistent targets as the trusted instances. More specifically, we adopt two types of training data tuning operations: crafting the training instances and subset-selecting the training set.
+This paper considers partial corrupted local data while the rest fraction is trusted in FL. The clients are organized to jointly tune the corrupted training data set, such that the model learnt with the tuned training set by the server predicts consistent targets as the trusted instances. More specifically, it adopt two types of training data tuning operations: crafting the training instances and subset-selecting the training set.
 
 
 [P15]
 [dba distributed backdoor attacks against federated learning](./Poison/P15_dba_distributed_backdoor_attacks_against_federated_learning.pdf)
 ICLR
+
+```python
+why, what, goal = "[P8]"
+how = "use distributed trigger rather than one trigger to achieve better occultation"
+```
+<img src = "./imgs/P15.png", width = 80% \>
 
 Instead of applying the same trigger in the attackers' datasets in [P8], this paper studies the distributed triggers (multiple triggers for subtasks) in FL, which can be more insidious and hard to detect. Additionally, the impact of triggers factors (eg. size, gap, location) are studied.
 
@@ -337,7 +347,7 @@ This paper concludes that FL systems can NOT be tailored to be robust against ba
 [Comprehensive-Privacy-Analysis-of-Deep-Learning-Passive-and-Active-White-box-Inference-Attacks-against-Centralized-and-Federated-Learning](./Poison/P19_Comprehensive-Privacy-Analysis-of-Deep-Learning-Passive-and-Active-White-box-Inference-Attacks-against-Centralized-and-Federated-Learning.pdf)
 S&P
 
-This paper proposes a white-box membership inference attacks, one observation from this paper is that latter layer leaks more information than the former, however the leakage of activation layer is similar to output layer. So the results of white-box and black-box using activation information are similar. It design deep learning attack models using the gradient vector over all parameters on the target data point as the main feature for the attack. The architecture (simple CNN + FCN) processes extracted (gradient) features from different layers of the target model separately, and combines their information to compute the membership probability of a target data point.  Further， it designs an active attack in the federated learning setting, the adversary can actively push SGD to leak even more information about the participants’ data. 
+This paper proposes a white-box membership inference attacks, one observation from this paper is that latter layer leaks more information than the former, however the leakage of activation layer is similar to output layer. So the results of white-box and black-box using activation information are similar. It design deep learning attack models using the gradient vector over all parameters on the target data point as the main feature for the attack. The architecture (simple CNN + FCN) processes extracted (gradient) features from different layers of the target model separately, and combines their information to compute the membership probability of a target data point. Further, it designs an active attack in the federated learning setting, the adversary can actively push SGD to leak even more information about the participants’ data. 
 
 [P20] [FLTrust: Byzantine-robust Federated Learning via Trust Bootstrapping
 ](./Poison/P20-FLTrust-Byzantine-robust-Federated-Learning-via-Trust-Bootstrapping.pdf)
@@ -353,20 +363,29 @@ This paper presents a generic framework for model poisoning attacks and a novel 
 
 [P22] [Threats to Federated Learning: A Survey](./Poison/P22_Threats-to-Federated-Learning-A-Survey.pdf)
 
+It summarizes the existing threats to FL
+
 [P23] [Exploiting Unintended Feature Leakage in Collaborative Learning](./poison/P23-Exploiting-Unintended-Feature-Leakage-in-Collaborative-Learning.pdf)
 
 
 ```mermaid
 graph LR
-A(Robustness-22)-->B1(Data Poisoning)
-A-->B2(Local Model Poisoning)
-B1-->C1(Federated)
-B1-->C2(Centralized)
+Z(Adversary)-->Z1(Attacks)
+Z-->Z2(Defenses)
+Z1-->A1(Training)
+Z1-->A2(Inferrence)
+A1-->B1(Data Poisoning)
+B1-->M1(Dirty label)
+B1-->M2(Clean label)
+A1-->B2(Local Model Poisoning)
+M1-->C1(Federated)
+M1-->C2(Centralized)
 B2-->D1(2)
 B2-->D2(backdoor-8)
-B2-->D3(21)
+B2-->D3(generic model poison-21)
 B2-->D4(distributed backddor-15)
 B2-->D5(alternative minimization and parameter estimation-16)
+B2-->D6(edge-case backdoor-18)
 C1-->G1(Label flipping-1)
 C1-->G2(3)
 C1-->G3(Multi-task-5)
@@ -375,6 +394,16 @@ C2-->H1(3)
 C2-->H2(4)
 C2-->H3(Multi-class back gradient optimization-6)
 C2-->H4(7)
+A2-->B3(Membership)
+B3-->I1(white-box-19)
+A2-->B4(Reconstructing)
+A2-->B5(Misclassification)
+Z2-->B11(Training)
+Z2-->B12(Inference)
+B11-->C11(Model poisoning)
+B11-->C12(Data poisoning)
+C11-->D11(20)
+C12-->D12(Heterogenous data-17)
 ```
 
 ### Optimization_Distribution
@@ -407,5 +436,4 @@ B1-->C2(..)
 C1-->D1(affline-9)
 C1-->D2(size & non-iid -8)
 ```
-
 
