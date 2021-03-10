@@ -18,6 +18,7 @@ Conferences and Journals Collection for Federated Learning from 2019 to 2021. Fo
 | CCS |  1 |  |   | 
 | RTSS | 1 |  |   | 
 | S&P | 2 |  |   | 
+| USENIX Security| - | 1 | |
 
 - B-Level
 
@@ -116,6 +117,7 @@ Conferences and Journals Collection for Federated Learning from 2019 to 2021. Fo
 | RTSS | Edge |  |   | 
 | S&P | Privacy, Robustness|  |   | 
 | NDSS | - |  Privacy, Robustness |   | 
+| USENIX Security| - | Robustness | |
 
 
 
@@ -142,7 +144,6 @@ Conferences and Journals Collection for Federated Learning from 2019 to 2021. Fo
 
 ## Related Works
 ### Incentives
-
 
 [IN1] [Incentive Mechanism for Reliable Federated Learning: A Joint Optimization Approach to Combining Reputation and Contract Theory](./Incentives/1-Incentive-Mechanism-for-Reliable-Federated-Learning—A-Joint-Optimization-Approach-to-Combining-Reputation-and-Contract-Theory.pdf)
 
@@ -261,7 +262,7 @@ H1-->I2(Reliability-1)
 ```
 
 ### Robustness
-
+[poison_works](./poison.md)
 ![overview](./imgs/poison_overview.png)
 
 [P1] [Data Poisoning Attacks Against
@@ -270,9 +271,20 @@ Federated Learning Systems.](./Poison/P1_Data_Poisoning_Attacks_Against_Federate
 This paper studies targeted data poisoning attacks against FL systems in which a malicious subset of the participants aim to poison the
 global model by sending model updates derived from mislabeled data.
 
-[P2] [Local Model Poisoning Attacks to Byzantine-Robust Federated Learning.](./Poison/P2_Local_Model_Poisoning_Attacks_to_Byzantine_Robust_Federated_Learning.pdf)
+[P2] [Local Model Poisoning Attacks to Byzantine-Robust Federated Learning.](./Poison/P2_Local_Model_Poisoning_Attacks_to_Byzantine_Robust_Federated_Learning.pdf)Usenix Security 20
 
-It performs the first systematic study on local model poisoning attacks to federated learning under Byzantine-Robust FL. This paper formulates their attacks as optimization problems and apply our attacks to four recent Byzantine-robust federated learning methods.
+
+It performs the first systematic study on round-based local model poisoning attacks to federated learning under Byzantine-Robust FL. This paper formulates their attacks as optimization problems and apply our attacks to four recent Byzantine-robust federated learning methods.
+
+```python
+what = "model poisoning"
+why = " first to consider about model poisoning under defenses"
+goal = "untargeted model poisoning"
+how = "directed deviation, to deviate a global model parameter most towards the inverse of the direction under aggregation defenses"
+```
+<img src="./imgs/P2-1.png" width = "50%",  align="absmiddle"/>
+where s = 1 or -1
+
 
 [P3] [Learning to Detect Malicious Clients for Robust Federated Learning.](./Poison/P3_Learning_to_Detect_Malicious_Clients_for_Robust_Federated_Learning.pdf)
 
@@ -334,13 +346,35 @@ ICML
 3. using parameter estimation for the benign agents’ updates to improve on attack success by averaging methods assuming the cumulative updates were the same at each step for benigns;  
 4. use a suite of interpretability techniques to generate visual explanations for both benign and malicious models to demonstrate indistinguishability.
 
+```python
+what = "model poisoning by a single, non-colluding malicious agent"
+why = " first to consider about stealth in model poisoning"
+goal = "targeted, effective, stealth under defenses"
+how = "effective = boosting of updates, stealth = alternating minimization strategy"
+conclusion = "model poisoning attacks are much more effective than data poisoning in FL"
+```
+
 [P17]
 
 [P18]
 [attack-of-the-tails-yes-you-really-can-backdoor-federated-learning-Paper](./Poison/P18-attack-of-the-tails-yes-you-really-can-backdoor-federated-learning-Paper.pdf)
 NIPS
 
-This paper concludes that FL systems can NOT be tailored to be robust against backdoors. And it provides edge-case backdoors which forces a model to misclassify on seemingly easy inputs that are however unlikely to be part of the training, or test data, i.e., they live on the tail of the input distribution.
+<img src = "./imgs/P18-1.png", width = 80% \>
+
+
+```python
+what = "edge-case backdoor: misclassify of easy inputs that are however unlikely to be part of the training, or test data, i.e., they live on the tail of the input distribution"
+why = "hard to to filter under diverse data settings"
+goal = "targeted under defense"
+how = """
+black-box: direct data poison;
+PGD: periodically project their model on a small ball, centered around the global model of the previous round;
+PGD+boosting[P16];
+"""
+```
+
+This paper concludes that FL systems can NOT be tailored to be robust against backdoors. And it provides edge-case backdoors which forces a model to misclassify on seemingly easy inputs that are however unlikely to be part of the training, or test data, i.e., they live on the tail of the input distribution. Specifically, it is 3 attacks: black-box, PGD and PGD+boosting[P16]
 
 
 [P19]
@@ -348,6 +382,16 @@ This paper concludes that FL systems can NOT be tailored to be robust against ba
 S&P
 
 This paper proposes a white-box membership inference attacks, one observation from this paper is that latter layer leaks more information than the former, however the leakage of activation layer is similar to output layer. So the results of white-box and black-box using activation information are similar. It design deep learning attack models using the gradient vector over all parameters on the target data point as the main feature for the attack. The architecture (simple CNN + FCN) processes extracted (gradient) features from different layers of the target model separately, and combines their information to compute the membership probability of a target data point. Further, it designs an active attack in the federated learning setting, the adversary can actively push SGD to leak even more information about the participants’ data. 
+
+
+```python
+what = "passive and active, white-box, inference, membership, central and FL"
+goal = "white-box membership inference attacks"
+why = "the leakage of activation layer is similar to output layer"
+how = "train a binary classification model using gradients, hidden layers, output, loss"
+```
+<img src = "./imgs/P19-1.png", width = 50%><img src = "./imgs/P19-2.png", width = 50%>
+
 
 [P20] [FLTrust: Byzantine-robust Federated Learning via Trust Bootstrapping
 ](./Poison/P20-FLTrust-Byzantine-robust-Federated-Learning-via-Trust-Bootstrapping.pdf)
@@ -360,6 +404,17 @@ Rather than performing anomaly detection in local model, this paper build bootst
 NDSS
 
 This paper presents a generic framework for model poisoning attacks and a novel defense   called divide-and-conquer (DnC) on FL. The key idea of its generic poisoning is that they introduce perturbation vectors and optimize the scaling factor $\gamma$ in both AGR-tailored and AGR-agnostic manners. DnC applies a singular value decomposition (SVD) based spectral methods to detect and remove outliers.
+
+```python
+what = "model poisoning + defense"
+goal = "untargeted under defense"
+why = "defenses exist"
+how = """
+poisoning: introduce perturbation vectors and optimize the scaling factor 
+defense: singular value decomposition based spectral methods
+"""
+```
+<img src = "./imgs/P21-1.png", width = 100%>
 
 [P22] [Threats to Federated Learning: A Survey](./Poison/P22_Threats-to-Federated-Learning-A-Survey.pdf)
 
@@ -381,15 +436,16 @@ A1-->B2(Local Model Poisoning)
 M1-->C1(Federated)
 M1-->C2(Centralized)
 B2-->D1(2)
-B2-->D2(backdoor-8)
 B2-->D3(generic model poison-21)
+B2-->D2(backdoor-8)
 B2-->D4(distributed backddor-15)
-B2-->D5(alternative minimization and parameter estimation-16)
 B2-->D6(edge-case backdoor-18)
+B2-->D5(alternative minimization and parameter estimation-16)
 C1-->G1(Label flipping-1)
 C1-->G2(3)
 C1-->G3(Multi-task-5)
 C1-->G4(Partial corrupted data-14)
+C1-->G5(Edge-case-18)
 C2-->H1(3)
 C2-->H2(4)
 C2-->H3(Multi-class back gradient optimization-6)
