@@ -17,7 +17,8 @@ why = " first to consider about model poisoning under defenses"
 goal = "untargeted model poisoning"
 how = "directed deviation, to deviate a global model parameter most towards the inverse of the direction under aggregation defenses"
 ```
-<img src="./imgs/P2-1.png" width = "50%",  align="absmiddle"/>
+<img src="./imgs/P2-1.png" width = "50%" align="absmiddle"/>
+
 where s = 1 or -1
 
 
