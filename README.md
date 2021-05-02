@@ -154,6 +154,9 @@ Conferences and Journals Collection for Federated Learning from 2019 to 2021. Fo
 [poison works](./poison.md)
 ![overview](./imgs/poison_overview.png)
 
+### Personalization
+[personalization works](./personalization.md)
+
 
 ### Optimization_Distribution
 [optimization and distribution works](./optimization_distribution.md)
