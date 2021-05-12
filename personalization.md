@@ -5,4 +5,4 @@ It studies a personalized variant of the federated learning in which the goal is
 
 [PE2] [Personalized Federated Learning with Moreau Envelopes](./Personalization/PE2-personalized-federated-learning-with-moreau-envelopes-Paper.pdf) NIPS 20
 
-[PE3] [Adaptive Gradient-Based Meta-Learning Methods](./Personalization/Adaptive Gradient-Based Meta-Learning Methods.pdf) NIPS 19
+[PE3] [Adaptive Gradient-Based Meta-Learning Methods](./Personalization/PE3-adaptive-gradient-based-meta-learning-methods-Paper.pdf) NIPS 19

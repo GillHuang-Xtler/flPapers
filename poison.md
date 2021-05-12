@@ -176,6 +176,8 @@ It summarizes the existing threats to FL
 
 It proposes a white box membership inference attack and property attack. For membership, the paper shows that it will be leaked by the embedding layer (e.g, one-hot word embedding) and the gradients. For the passive property attack (holding labeled property data), it trains a binary batch property classifier (LR, RF, etc.) using gradients with and with our property data. For the active property attack, muti-task learning is introduced. Specifically, it uses a joint loss on the main task and the property task. All of the attackers in this paper are honest.
 
+[P24] [A Little Is Enough: Circumventing Defenses For Distributed Learning](./poison/P24-a-little-is-enough-circumventing-defenses-for-distributed-learning-Paper.pdf) NIPS 19
+
 ```mermaid
 graph LR
 Z(Adversary)-->Z1(Attacks)
