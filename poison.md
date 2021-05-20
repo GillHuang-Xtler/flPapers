@@ -178,6 +178,18 @@ It proposes a white box membership inference attack and property attack. For mem
 
 [P24] [A Little Is Enough: Circumventing Defenses For Distributed Learning](./poison/P24-a-little-is-enough-circumventing-defenses-for-distributed-learning-Paper.pdf) NIPS 19
 
+```python
+what = "model poisoning"
+goal = "untargeted/targeted under defense"
+why = "variance between different workers is high enough"
+how = "add a small amounts of noises to a benign aggregate."
+```
+
+This paper argues that variance between different workers is high enough so they provide a perturbation range in which the attacker can change the parameters without being detected even in i.i.d. settings. Changes within this range are sufficient for both interfering untargeted and targeted attack.
+
+<img src = "./imgs/P24-2.png" width = "50%" /><img src = "./imgs/P24-1.png" width = "50%" />
+
+
 ```mermaid
 graph LR
 Z(Adversary)-->Z1(Attacks)
@@ -194,6 +206,7 @@ B2-->N1(Targeted)
 B2-->N2(Untargeted)
 N2-->D1(directed deviation-2)
 N2-->D3(generic model poison-21)
+N2-->D7(generic model poison-24)
 N1-->D2(backdoor-8)
 N1-->D4(distributed backddor-15)
 N1-->D6(edge-case backdoor-18)
