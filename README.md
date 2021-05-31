@@ -27,10 +27,10 @@ Conferences and Journals Collection for Federated Learning from 2019 to 2021. Fo
 | CIKM | 1 | 1 |   | 
 | ICDM | - |  1|   | 
 | COLING  | - | 1 |  |
-| ICDCS  | 3 | - |  | 
+| ICDCS  | 3 | 7 |  | 
 | EMNLP | - | 2 |   | 
 | ECAI | - | 2 |   | 
-| DASFAA | - | 4 |   | 
+| DASFAA | - | 4 | 2 | 
 | CoNEXT | - |5  |   | 
 | ICNP | - |  2 |   | 
 | ICPP | - | 2 |   | 
@@ -41,9 +41,9 @@ Conferences and Journals Collection for Federated Learning from 2019 to 2021. Fo
 | MIDDLEWARE | - | 3 |   | 
 | DCC | 1 | - |   | 
 | MOBISYS | 1 |  |   | 
-| WSDM | 1 |  |   | 
-| NDSS | - |  |  3 | 
-| ESORICS | 1 |  |   | 
+| WSDM | 1 |  | 2 | 
+| NDSS | - | - |  3 | 
+| ESORICS | 1 | 2 |   | 
 
 - C-Level
 
@@ -119,6 +119,7 @@ Conferences and Journals Collection for Federated Learning from 2019 to 2021. Fo
 | S&P | Privacy, Robustness|  |   | 
 | NDSS | - |   |  Privacy, Robustness | 
 | USENIX Security| - | Robustness | |
+| WSDM| Application | - | Application |
 
 
 
