@@ -155,8 +155,6 @@ Rather than performing anomaly detection in local model, this paper build bootst
 ](./Poison/P21-Manipulating-the-Byzantine-Optimizing-Model-Poisoning-Attacks-and-Defenses-for-Federated-Learning.pdf)
 NDSS 21
 
-This paper presents a generic framework for model poisoning attacks and a novel defense   called divide-and-conquer (DnC) on FL. The key idea of its generic poisoning is that they introduce perturbation vectors and optimize the scaling factor $\gamma$ in both AGR-tailored and AGR-agnostic manners. DnC applies a singular value decomposition (SVD) based spectral methods to detect and remove outliers.
-
 ```python
 what = "model poisoning + defense"
 goal = "untargeted under defense"
@@ -165,6 +163,10 @@ how = """
 poisoning: introduce perturbation vectors and optimize the scaling factor 
 defense: singular value decomposition based spectral methods
 """
+
+This paper presents a generic framework for model poisoning attacks and a novel defense   called divide-and-conquer (DnC) on FL. The key idea of its generic poisoning is that they introduce perturbation vectors and optimize the scaling factor $\gamma$ in both AGR-tailored and AGR-agnostic manners. DnC applies a singular value decomposition (SVD) based spectral methods to detect and remove outliers.
+
+
 ```
 <img src = "./imgs/P21-1.png" width = "100%" />
 
@@ -191,13 +193,15 @@ This paper argues that variance between different workers is high enough so they
 
 [P25] [Free-rider Attacks on Model Aggregation in Federated Learning](./poison/P25-Free-rider-Attacks-on-Model-Aggregation-in-Federated-Learning.pdf) AISTATS  21
 
-Instead of send the global model last round back to the server, free-riders in this paper introduce a opportune stochastic perturbations of the parameters. As a result, the convergence of global model can be theoratically guaranteed and the free-riders can be hardly detected.
-
 ```python
 what = goal = "free-rider attack"
 why = "get global for nothing without being detected"
 how = "introduce a opportune stochastic perturbations of the parameters"
 ```
+
+Instead of send the global model last round back to the server, free-riders in this paper introduce a opportune stochastic perturbations of the parameters. As a result, the convergence of global model can be theoratically guaranteed and the free-riders can be hardly detected.
+
+
 
 
 ```mermaid
