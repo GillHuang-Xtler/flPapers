@@ -189,6 +189,16 @@ This paper argues that variance between different workers is high enough so they
 
 <img src = "./imgs/P24-2.png" width = "50%" /><img src = "./imgs/P24-1.png" width = "50%" />
 
+[P25] [Free-rider Attacks on Model Aggregation in Federated Learning](./poison/P25-Free-rider-Attacks-on-Model-Aggregation-in-Federated-Learning.pdf) AISTATS  21
+
+Instead of send the global model last round back to the server, free-riders in this paper introduce a opportune stochastic perturbations of the parameters. As a result, the convergence of global model can be theoratically guaranteed and the free-riders can be hardly detected.
+
+```python
+what = goal = "free-rider attack"
+why = "get global for nothing without being detected"
+how = "introduce a opportune stochastic perturbations of the parameters"
+```
+
 
 ```mermaid
 graph LR
@@ -196,6 +206,8 @@ Z(Adversary)-->Z1(Attacks)
 Z-->Z2(Defenses)
 Z1-->A1(Training)
 Z1-->A2(Inferrence)
+Z1-->A3(Free-Rider)
+A3-->B6(25)
 A1-->B1(Data Poisoning)
 B1-->M1(Dirty label)
 B1-->M2(Clean label)
