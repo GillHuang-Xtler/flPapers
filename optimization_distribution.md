@@ -8,6 +8,11 @@ NIPS
 
 This paper achieves satisfactory performance against distribution shifts in users’ samples (considering a structured affine distribution shift). To address this problem, they propose FLRA framework with a fast and efficient optimization method and provide convergence and performance guarantees via a gradient Descent Ascent (GDA) method. They further prove generalization error bounds for the learnt classifier to show proper generalization from empirical distribution of samples to the true underlying distribution.
 
+[A10] [Federated Learning with Taskonomy for Non-IID Data](./Optimization_Distribution/A10-Federated-Learning-with-Taskonomy-for-Non-IID-Data.pdf)
+
+[A11] [Agnostic Federated Learning](./Optimization_Distribution/A11-Agnostic_Federated_Learning.pdf)
+
+
 [ST1] [Client Selection for Federated Learning with
 Heterogeneous Resources in Mobile Edge](./Optimization_Distribution/St1_Client_Selection_for_Federated_Learning_with_Heterogeneous_Resources_in_Mobile_Edge.pdf)
 

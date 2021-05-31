@@ -8,7 +8,7 @@ Conferences and Journals Collection for Federated Learning from 2019 to 2021. Fo
 |  ----  | ----  | ----  | ----  |
 | AAAI  | - | 6 |  |
 | IJCAI  | 1 | 2 |  | 
-| AISTATS | - | 3 |   | 
+| [AISTATS](./conferences/aistats.md) | - | 3 | 7 | 
 | ICLR | - | 4 |   | 
 | KDD | - | 2 |   | 
 | INFOCOM | 2 |7  |   | 
@@ -107,7 +107,7 @@ Conferences and Journals Collection for Federated Learning from 2019 to 2021. Fo
 |  ----  | ----  | ----  | ----  |
 | AAAI  | - | Optimization, NLP, Representation, CV, Privacy, Robustness |  |
 | IJCAI  | Explanation | Incentive, Meta-Learning |  | 
-| AISTATS | - | Privacy, Efficiency, Robustness |   | 
+| AISTATS | - | Privacy, Efficiency, Robustness | Optimization, Robustness, Privacy, Compression, Personalization | 
 | ICLR | - | Aggregation, Robustness, Optimization |   | 
 | KDD | - | Optimization, NLP |   | 
 | INFOCOM | Privacy, Edge | Robustness,  Distribution, Edge, Optimization, Security |   | 
