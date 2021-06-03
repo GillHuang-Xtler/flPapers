@@ -199,6 +199,8 @@ why = "get global for nothing without being detected"
 how = "introduce a opportune stochastic perturbations of the parameters"
 ```
 
+![alg](./imgs/P25-1.png)How to get \epsinon? a suitable time-varying perturbation * Gussian noise(In the paper, they use constant rather than time-varying).
+
 Instead of send the global model last round back to the server, free-riders in this paper introduce a opportune stochastic perturbations of the parameters. As a result, the convergence of global model can be theoratically guaranteed and the free-riders can be hardly detected.
 
 

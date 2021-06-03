@@ -12,7 +12,7 @@ Conferences and Journals Collection for Federated Learning from 2019 to 2021. Fo
 | ICLR | - | 4 |   | 
 | KDD | - | 2 |   | 
 | INFOCOM | 2 |7  |   | 
-| ICML | 4 |  6|   | 
+| ICML | 4 |  6 |  18 | 
 | MOBICOM | - | 1 |   | 
 | NeurIPS | - | 17 |   | 
 | CCS |  1 |  |   | 
@@ -110,8 +110,8 @@ Conferences and Journals Collection for Federated Learning from 2019 to 2021. Fo
 | AISTATS | - | Privacy, Efficiency, Robustness | Optimization, Robustness, Privacy, Compression, Personalization | 
 | ICLR | - | Aggregation, Robustness, Optimization |   | 
 | KDD | - | Optimization, NLP |   | 
-| INFOCOM | Privacy, Edge | Robustness,  Distribution, Edge, Optimization, Security |   | 
-| ICML | Aggregation, Optimization, Robustness, Incentive|  Distribution, Efficiency, Optimization |   | 
+| INFOCOM | Privacy, Edge | Robustness,  Heterogeneous, Edge, Optimization, Security |   | 
+| ICML | Aggregation, Optimization, Robustness, Incentive|  Heterogeneous, Efficiency, Optimization | Privacy, Personalization, Optimization, Heterogeneous, Clients Selection, Robustness | 
 | MOBICOM | - | Efficiency, Privacy |   | 
 | NeurIPS | - | Robustness, Optimization, Efficiency, Aggregation,  Personalization, Meta-Learning,  Split Learning|   | 
 | CCS |  Security |  |   | 
