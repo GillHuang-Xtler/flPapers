@@ -6,7 +6,7 @@ Conferences and Journals Collection for Federated Learning from 2019 to 2021. Fo
 
 |  Conference   | 2019 | 2020 | 2021 |
 |  ----  | ----  | ----  | ----  |
-| AAAI  | - | 6 | 14 |
+| [AAAI](./conferences/aaai.md)  | - | 6 | 14 |
 | IJCAI  | 1 | 2 |  | 
 | [AISTATS](./conferences/aistats.md) | - | 3 | 7 | 
 | ICLR | - | 4 |   | 
