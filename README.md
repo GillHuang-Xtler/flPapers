@@ -17,7 +17,7 @@ Conferences and Journals Collection for Federated Learning from 2019 to 2021. Fo
 | [NeurIPS](./conferences/neurips.md) | - | 17 |   | 
 | [CCS](./conferences/ccs.md) |  1 |  |   | 
 | [RTSS](./conferences/rtss.md) | 1 |  |   | 
-| [S&P](./conferences/sp.md) | 2 |  |   | 
+| [S&P](./conferences/sp.md) | 1 |  |   | 
 | [USENIX Security](./conferences/usenix.md)| - | 1 | |
 
 - B-Level
@@ -116,7 +116,7 @@ Conferences and Journals Collection for Federated Learning from 2019 to 2021. Fo
 | NeurIPS | - | Robustness, Optimization, Efficiency, Aggregation,  Personalization, Meta-Learning,  Split Learning|   | 
 | CCS |  Security |  |   | 
 | RTSS | Edge |  |   | 
-| S&P | Privacy, Robustness|  |   | 
+| S&P | Robustness|  |   | 
 | NDSS | - |   |  Privacy, Robustness | 
 | USENIX Security| - | Robustness | |
 | WSDM| Application | - | Application |
