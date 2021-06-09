@@ -105,7 +105,7 @@ Conferences and Journals Collection for Federated Learning from 2019 to 2021. Fo
 
 |  Conference   | 2019 | 2020 | 2021 |
 |  ----  | ----  | ----  | ----  |
-| AAAI  | - | Optimization, NLP, Representation, CV, Privacy, Robustness |  |
+| AAAI  | - | Optimization, NLP, Representation, CV, Privacy, Robustness | Incentive, Robustness, Personalization, Privacy, Heterogeneous, Optimization,  |
 | IJCAI  | Explanation | Incentive, Meta-Learning |  | 
 | AISTATS | - | Privacy, Efficiency, Robustness | Optimization, Robustness, Privacy, Compression, Personalization | 
 | ICLR | - | Aggregation, Robustness, Optimization |   | 

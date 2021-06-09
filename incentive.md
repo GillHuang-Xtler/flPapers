@@ -71,6 +71,14 @@ IJCAI: Multi-party Game Demonstration
 [An-incentive-scheme-for-federated-learning-in-the-sky](./Incentives/IN16-An-incentive-scheme-for-federated-learning-in-the-sky.pdf)
 
  Mobicom: Unmanned aerial vehicle
+ 
+ [IN18]
+ [Towards Understanding the Influence of Individual Clients in Federated Learning](./Incentives/IN18-Towards-Understanding-the-Influence-of-Individual-Clients-in-Federated-Learning.pdf)
+ 
+ This paper defines a new notion, called Fed-Influence, to quantify this influence over the model parameters, and proposed an effective and efficient algorithm to estimate this metric.
+ 
+ [IN19]
+[Model-sharing Games: Analyzing Federated Learning Under Voluntary Participation](./Incentives/IN19-Model-sharing-Games-Analyzing-Federated-Learning-Under-Voluntary-Participation.pdf)
 
 
 
@@ -105,7 +113,7 @@ A(FL Incentive)-->B1(Self-reported)
 A-->B2(Marginal loss)
 A-->B3(Similarity)
 B1-->C1(Stackberg game)
-B2-->D1(Influence-2,6)
+B2-->D1(Influence-2,6,18)
 B2-->D2(Shapley Value-2,11)
 D2-->E1(Blockchain-10)
 B3-->F1(Reputation)
