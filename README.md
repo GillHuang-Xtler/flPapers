@@ -9,8 +9,8 @@ Conferences and Journals Collection for Federated Learning from 2019 to 2021. Fo
 | [AAAI](./conferences/aaai.md)  | - | 6 | 14 |
 | [IJCAI](./conferences/ijcai.md)  | 1 | 2 |  | 
 | [AISTATS](./conferences/aistats.md) | - | 3 | 7 | 
-| ICLR | - | 4 |   | 
-| KDD | - | 2 |   | 
+| [ICLR](./conferences/iclr.md) | - | 4 |   | 
+| [KDD](./conferences/kdd.md) | - | 2 |   | 
 | INFOCOM | 2 |7  |   | 
 | ICML | 4 |  6 |  18 | 
 | MOBICOM | - | 1 |   | 
