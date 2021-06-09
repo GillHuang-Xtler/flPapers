@@ -11,14 +11,14 @@ Conferences and Journals Collection for Federated Learning from 2019 to 2021. Fo
 | [AISTATS](./conferences/aistats.md) | - | 3 | 7 | 
 | [ICLR](./conferences/iclr.md) | - | 4 |   | 
 | [KDD](./conferences/kdd.md) | - | 2 |   | 
-| INFOCOM | 2 |7  |   | 
-| ICML | 4 |  6 |  18 | 
-| MOBICOM | - | 1 |   | 
-| NeurIPS | - | 17 |   | 
-| CCS |  1 |  |   | 
-| RTSS | 1 |  |   | 
-| S&P | 2 |  |   | 
-| USENIX Security| - | 1 | |
+| [INFOCOM](./conferences/infocom.md) | 2 |7  |   | 
+| [ICML](./conferences/icml.md)| 4 |  6 |  18 | 
+| [MOBICOM](./conferences/mobicom.md) | - | 1 |   | 
+| [NeurIPS](./conferences/neurips.md) | - | 17 |   | 
+| [CCS](./conferences/ccs.md) |  1 |  |   | 
+| [RTSS](./conferences/rtss.md) | 1 |  |   | 
+| [S&P](./conferences/sp.md) | 2 |  |   | 
+| [USENIX Security](./conferences/usenix.md)| - | 1 | |
 
 - B-Level
 
