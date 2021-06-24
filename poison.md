@@ -71,6 +71,8 @@ Issues and Countermeasures](./Poison/P12-Malware-Collusion-Attack-against-SVM-Is
 
 (Collusion and Evasion) Initially, the SVM based detection method, as well as other machine learning methods, performs a static analysis on Android Apps to construct a feature space and train a detection classifier using the features. Thus, this paper designs a collusion attack by splitting the nalicious feature into multiple apps. Apart from splitting the app into two or more apps, malware developers also have the incentive to add benign functions to hide its malicious behavior such as obfuscation, reflection, and class encryption.
 
+
+
 [P14] [Robust Federated Training via Collaborative Machine Teaching using Trusted Instances](./Poison/P14_Robust_Federated_Training_via_Collaborative_Machine_Teaching_using_Trusted_Instances.pdf)
 AAAI 20
 
@@ -203,6 +205,19 @@ how = "introduce a opportune stochastic perturbations of the parameters"
 
 Instead of send the global model last round back to the server, free-riders in this paper introduce a opportune stochastic perturbations of the parameters. As a result, the convergence of global model can be theoratically guaranteed and the free-riders can be hardly detected.
 
+[P26] [Curse or Redemption? How Data Heterogeneity Affects
+the Robustness of Federated Learning](./Poison/P26-Curse-or-Redemption-How-Data-Heterogeneity-Affects-the-Robustness-of-Federated-Learning.pdf) AAAI 21
+
+This paper discusses the impacts brought by data hererogeneity of targeted poisoning. In summary, there are 3 redemptions and 3 curses and it provides some possible directions of defendses under non-iid. 3 of redemptions includes: 
+
+	- non-iid makes ASR lower;
+	- malicious data distribution matters;
+	- higher scale/quantity of malicious users do not always help. 
+3 curses includes:
+
+	- non-iid makes ASR sensitive to attack timing, which makes it easier to attack (later the better)
+	- similarity based defenses lose in non-iid cases
+	- attack can be designed stronger by making the malicious data distribution close to the overall data distribution with the help of distribution distance measures
 
 
 
