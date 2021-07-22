@@ -6,7 +6,7 @@
 5. [LDP-FL: Practical Private Aggregation in Federated Learning with Local Differential Privacy](https://arxiv.org/abs/2007.15789)
 6. [Practical One-Shot Federated Learning for Cross-Silo Setting](https://arxiv.org/abs/2010.01017)
 7. [H-FL: A Hierarchical Communication-Efficient and Privacy-Protected Architecture for Federated Learning](https://arxiv.org/abs/2106.00275)
-8. [Behavior Mimics Distribution: Combining Individual and Group Behaviors for Federated Learning]()
+8. [Behavior Mimics Distribution: Combining Individual and Group Behaviors for Federated Learning](https://arxiv.org/abs/2106.12300?fbclid=IwAR3BVho-0YyKiZ0LNxyS3CnqCiwT3PqNIifVFRykYOcI1zLWv0Vurmou-lo)
 
 
 ### 2020
