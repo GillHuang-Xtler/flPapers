@@ -10,15 +10,15 @@ Conferences and Journals Collection for Federated Learning from 2019 to 2021. Fo
 | [IJCAI](./conferences/ijcai.md)  | 1 | 2 | 8 | 
 | [AISTATS](./conferences/aistats.md) | - | 3 | 7 | 
 | [ICLR](./conferences/iclr.md) | - | 4 | 10 | 
-| [KDD](./conferences/kdd.md) | - | 2 |   | 
-| [INFOCOM](./conferences/infocom.md) | 2 |7  |   | 
+| [KDD](./conferences/kdd.md) | - | 2 | -  | 
+| [INFOCOM](./conferences/infocom.md) | 2 |7  | -  | 
 | [ICML](./conferences/icml.md)| 4 |  6 |  18 | 
-| [MOBICOM](./conferences/mobicom.md) | - | 1 |   | 
+| [MOBICOM](./conferences/mobicom.md) | - | 1 | - | 
 | [NeurIPS](./conferences/neurips.md) | - | 17 |   | 
-| [CCS](./conferences/ccs.md) |  1 |  |   | 
-| [RTSS](./conferences/rtss.md) | 1 |  |   | 
-| [S&P](./conferences/sp.md) | 1 |  |   | 
-| [USENIX Security](./conferences/usenix.md)| - | 1 | |
+| [CCS](./conferences/ccs.md) |  1 | - |   | 
+| [RTSS](./conferences/rtss.md) | 1 |  - |   | 
+| [S&P](./conferences/sp.md) | 1 | - |   | 
+| [USENIX Security](./conferences/usenix.md)| - | 1 | -|
 
 - B-Level
 
