@@ -9,7 +9,7 @@ Conferences and Journals Collection for Federated Learning from 2019 to 2021. Fo
 | [AAAI](./conferences/aaai.md)  | - | 6 | 14 |
 | [IJCAI](./conferences/ijcai.md)  | 1 | 2 | 8 | 
 | [AISTATS](./conferences/aistats.md) | - | 3 | 7 | 
-| [ICLR](./conferences/iclr.md) | - | 4 |   | 
+| [ICLR](./conferences/iclr.md) | - | 4 | 10 | 
 | [KDD](./conferences/kdd.md) | - | 2 |   | 
 | [INFOCOM](./conferences/infocom.md) | 2 |7  |   | 
 | [ICML](./conferences/icml.md)| 4 |  6 |  18 | 
@@ -108,7 +108,7 @@ Conferences and Journals Collection for Federated Learning from 2019 to 2021. Fo
 | AAAI  | - | Optimization, NLP, Representation, CV, Privacy, Robustness | Incentive, Robustness, Personalization, Privacy, Heterogeneous, Optimization,  |
 | IJCAI  | Explanation | Incentive, Meta-Learning | Privacy, Application, Fairness, One-shot, Heterogeneous | 
 | AISTATS | - | Privacy, Efficiency, Robustness | Optimization, Robustness, Privacy, Compression, Personalization | 
-| ICLR | - | Aggregation, Robustness, Optimization |   | 
+| ICLR | - | Aggregation, Robustness, Optimization | Efficiency, Aggregation, Semi-Supervised Learning, Heterogeneous, Optimization, Personalization | 
 | KDD | - | Optimization, NLP |   | 
 | INFOCOM | Privacy, Edge | Robustness,  Heterogeneous, Edge, Optimization, Security |   | 
 | ICML | Aggregation, Optimization, Robustness, Incentive|  Heterogeneous, Efficiency, Optimization | Privacy, Personalization, Optimization, Heterogeneous, Clients Selection, Robustness | 
