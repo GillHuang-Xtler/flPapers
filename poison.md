@@ -219,6 +219,9 @@ This paper discusses the impacts brought by data hererogeneity of targeted poiso
 	- similarity based defenses lose in non-iid cases
 	- attack can be designed stronger by making the malicious data distribution close to the overall data distribution with the help of distribution distance measures
 
+[P27] [Analyzing User-Level Privacy Attack Against Federated Learning](./Poison/P27_Analyzing_User-Level_Privacy_Attack_Against_Federated_Learning.pdf)
+
+This paper discusses the privacy threat by the server to procisely recover the private data from specific a client. This paper proposed a multi-task GAN with novel discriminator to recover private data.
 
 
 ```mermaid
