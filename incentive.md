@@ -58,9 +58,10 @@ Shaply Value (SV) is often adopted in contribution assessment of Federated Learn
 
 This paper also values the feasibility of Shapley Value on federated contribution measurement. However, facing the same challenging of high cost while demonstrating Shapley Value, this paper proposes the contribution index (CI), a new Shapley value based metric fit for assessing the contribution. The idea CI is to reconstruct the approximate models on different combinations of the datasets through the intermediate results during the training process so as to avoid extra training.
 
-[IN12] [Understanding Federated Learning via Client-Level Influence Measurement.](./Incentives/12-Understanding_Federated_Learning_via_Client-Level_Influence_Measurement.pdf)
+[IN12]
+[Towards Understanding the Influence of Individual Clients in Federated Learning](./Incentives/IN12_Towards_Understanding_the_Influence_of_Individual_Clients_in_Federated_Learning.pdf)
 
-This paper proposes Fed-Influence, to measure contribution based on sub-model parameter without retrainig as well as a estimation algorithm. It works well on both convex and non-convex loss functions and does not require the  nal model to be optimal.
+This paper proposes Fed-Influence, to measure contribution based on sub-model parameter without retrainig as well as a estimation algorithm. It works well on both convex and non-convex loss functions and does not require the final model to be optimal.
 
 [IN15]
 [A_Multi-player_Game_for_Studying_Federated_Learning](./Incentives/IN15_A_Multi-player_Game_for_Studying_Federated_Learnin.pdf)
@@ -79,6 +80,7 @@ IJCAI: Multi-party Game Demonstration
  
  [IN19]
 [Model-sharing Games: Analyzing Federated Learning Under Voluntary Participation](./Incentives/IN19-Model-sharing-Games-Analyzing-Federated-Learning-Under-Voluntary-Participation.pdf)
+
 
 
 
