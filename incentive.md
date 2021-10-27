@@ -61,7 +61,7 @@ This paper also values the feasibility of Shapley Value on federated contributio
 [IN12]
 [Towards Understanding the Influence of Individual Clients in Federated Learning](./Incentives/IN12_Towards_Understanding_the_Influence_of_Individual_Clients_in_Federated_Learning.pdf)
 
-This paper proposes Fed-Influence, to measure contribution based on sub-model parameter without retrainig as well as a estimation algorithm. It works well on both convex and non-convex loss functions and does not require the final model to be optimal.
+This paper proposes Fed-Influence (client-level Influence on ), to measure contribution based on sub-model parameter without retrainig as well as a estimation algorithm. It works well on both convex and non-convex loss functions and does not require the final model to be optimal. This paper gives clear illustration for the Inluence Function over current work.
 
 [IN15]
 [A_Multi-player_Game_for_Studying_Federated_Learning](./Incentives/IN15_A_Multi-player_Game_for_Studying_Federated_Learnin.pdf)
@@ -115,7 +115,7 @@ A(FL Incentive)-->B1(Self-reported)
 A-->B2(Marginal loss)
 A-->B3(Similarity)
 B1-->C1(Stackberg game)
-B2-->D1(Influence-2,6,18)
+B2-->D1(Influence-2,6,12,18)
 B2-->D2(Shapley Value-2,11)
 D2-->E1(Blockchain-10)
 B3-->F1(Reputation)

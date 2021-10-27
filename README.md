@@ -24,26 +24,26 @@ Conferences and Journals Collection for Federated Learning from 2019 to 2021. Fo
 
 |  Conference   | 2019 | 2020 | 2021 |
 |  ----  | ----  | ----  | ----  |
-| CIKM | 1 | 1 |   | 
-| ICDM | - |  1|   | 
-| COLING  | - | 1 |  |
-| ICDCS  | 3 | 7 |  | 
-| EMNLP | - | 2 |   | 
-| ECAI | - | 2 |   | 
+| CIKM | 1 | 1 | -  | 
+| ICDM | - |  1| -  | 
+| COLING  | - | 1 | - |
+| ICDCS  | 3 | 7 | 6 | 
+| EMNLP | - | 2 | -  | 
+| ECAI | - | 2 | -  | 
 | DASFAA | - | 4 | 2 | 
-| CoNEXT | - |5  |   | 
-| ICNP | - |  2 |   | 
-| ICPP | - | 2 |   | 
-| ICSOC | - |  2 |   | 
-| ICWS | 2 | 2 |   | 
-| AIES | - | 1 |   | 
-| IPDPS |  - | 2 |   | 
-| MIDDLEWARE | - | 3 |   | 
-| DCC | 1 | - |   | 
-| MOBISYS | 1 |  |   | 
-| WSDM | 1 |  | 2 | 
+| CoNEXT | - |5  | -  | 
+| ICNP | - |  2 | - | 
+| ICPP | - | 2 | 3  | 
+| ICSOC | - |  2 | -  | 
+| ICWS | 2 | 2 | -  | 
+| AIES | - | 1 | -  | 
+| IPDPS |  - | 2 | 2  | 
+| MIDDLEWARE | - | 3 | - | 
+| DCC | 1 | - | - | 
+| MOBISYS | 1 | - |  2 | 
+| WSDM | 1 | - | 2 | 
 | NDSS | - | - |  3 | 
-| ESORICS | 1 | 2 |   | 
+| ESORICS | 1 | 2 | 3 | 
 
 - C-Level
 

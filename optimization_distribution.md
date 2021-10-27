@@ -18,6 +18,8 @@ Heterogeneous Resources in Mobile Edge](./Optimization_Distribution/St1_Client_S
 
 This paper propose a client selection strategy suitable for heterogeneous nodes in distributed systems. It gives a submission deadline in federated learning in order to reduce the impact of staggers. The deadline has been choosen by experience.
 
+[D6] [ON THE CONVERGENCE OF FEDAVG ON NON-IID
+DATA] (./Optimization_Distribution/D6_ON_THE_CONVERGENCE_OF_FEDAVG_ON_NON-IID_DATA.pdf)
 
 
 
