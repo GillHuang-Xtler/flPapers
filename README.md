@@ -14,7 +14,7 @@ Conferences and Journals Collection for Federated Learning from 2019 to 2021. Fo
 | [INFOCOM](./conferences/infocom.md) | 2 |7  | -  | 
 | [ICML](./conferences/icml.md)| 4 |  6 |  18 | 
 | [MOBICOM](./conferences/mobicom.md) | - | 1 | - | 
-| [NeurIPS](./conferences/neurips.md) | - | 17 |   | 
+| [NeurIPS](./conferences/neurips.md) | - | 17 | 32 | 
 | [CCS](./conferences/ccs.md) |  1 | - |   | 
 | [RTSS](./conferences/rtss.md) | 1 |  - |   | 
 | [S&P](./conferences/sp.md) | 1 | - |   | 
