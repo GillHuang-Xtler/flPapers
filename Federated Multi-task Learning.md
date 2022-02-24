@@ -79,4 +79,10 @@ Debiased Lasso. estimation
 
 [M11] [Private Multi-Task Learning: Formulation and Applications to Federated Learning] ()
 
+#### Possible direction and conclusion
+- If we go Non-iid, we should compare with M2 and especially M3
+- Optimization is not a good direction since there have been a lot of works
+- CMU group has also got stuck somewhere in this direction and go IoT now
+- Possible direction: application, attack, fairness.
+
 
