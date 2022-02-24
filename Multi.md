@@ -110,3 +110,7 @@ The goal is for faster convergence especially under non-iid. The key idea is to 
 It proposes a novel multi-center aggregation mechanism . It learns multiple global models from data, and simultaneously derives the optimal matching between users and centers. It is formulated as a bi-level optimization problem that can be efficiently solved by a stochastic expectation maximization (EM) algorithm. 
 <img src="./imgs/M14-1.png" width = "75%" align="absmiddle"/>
 
+#### Possible direction and conclusion
+- Soving Non-iid only is not a good choice
+- Consider the cooperation of multiple servers, e.g.,
+
