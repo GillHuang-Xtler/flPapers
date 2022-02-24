@@ -1,4 +1,4 @@
-# Federated Multi-task Learning
+# Federated Multi-xxx Learning
 
 Multi-task learning captures the similarity between tasks and obtains a task similarity graph. For federated learning, the task relationship graph can also be used as a communication graph. For a client, it communicates with clients that are highly related to its tasks when updating the model, so as to perform collaborative learning and reduce communication with unrelated clients. 
 
@@ -85,4 +85,28 @@ Debiased Lasso. estimation
 - CMU group has also got stuck somewhere in this direction and go IoT now
 - Possible direction: application, attack, fairness.
 
+
+## Multi-federator learning
+An FL system can consist of multiple server to organize the same or different tasks. For different task scenario, it is multi-task learning [M3]. For the same tasks, It can be viewed as personalization or a solution to specific problem.
+
+<img src="./imgs/multi-server.png" width = "100%" align="absmiddle"/>
+
+
+[M12] [Client-Edge-Cloud Hierarchical Federated Learning]()
+
+This paper proposes a client-edge-cloud hierarchical Feder- ated Learning system, supported with a HierFAVG algorithm that allows multiple edge servers to perform partial model aggregation. In this way, the model can be trained faster and better communication-computation trade-offs can be achieved.
+
+<img src="./imgs/M12-1.png" width = "75%" align="absmiddle"/>
+
+[M13] [FEDMES: SPEEDING UP FEDERATED LEARNING WITH MULTIPLE EDGE SERVERS]()
+
+The goal is for faster convergence especially under non-iid. The key idea is to utilize the devices located in the overlapping areas between the coverage of edge servers; in the model-downloading stage, the devices in the overlapping areas receive multiple models from different edge servers, take the average of the received models, and then update the model with their local data. These devices send their updated model to multiple edge servers by broadcasting, which acts as bridges for sharing the trained models between servers.
+
+<img src="./imgs/M13-1.png" width = "100%" align="absmiddle"/>
+
+
+[M14] [Multi-center federated learning]()
+
+It proposes a novel multi-center aggregation mechanism . It learns multiple global models from data, and simultaneously derives the optimal matching between users and centers. It is formulated as a bi-level optimization problem that can be efficiently solved by a stochastic expectation maximization (EM) algorithm. 
+<img src="./imgs/M14-1.png" width = "75%" align="absmiddle"/>
 
