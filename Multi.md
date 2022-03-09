@@ -31,9 +31,12 @@ In order to solve the problem that the data is not independent and identically d
 
 There is a central server.
 
-[M3] [Federated multi-task learning under a mixture of distributions]() NIPS 2021
+[M3] [Federated multi-task learning under a mixture of distributions](./Multitask/M3_Federated_Multi-Task_Learning_under_a_Mixture_of_Distributions.pdf) NIPS 2021
 
 There is no central server, so it is decentralized.
+
+- where: general FL
+- what: FMTL that each local data is a mixture of unknown underlying distributions, 
 
 ### Multi-task
 multi-task, aims to optimize the prediction of individual model. The objective function in general is:
@@ -98,11 +101,18 @@ This paper proposes a client-edge-cloud hierarchical Feder- ated Learning system
 
 <img src="./imgs/M12-1.png" width = "75%" align="absmiddle"/>
 
-[M13] [FEDMES: SPEEDING UP FEDERATED LEARNING WITH MULTIPLE EDGE SERVERS]()
+[M13] [FEDMES: SPEEDING UP FEDERATED LEARNING WITH MULTIPLE EDGE SERVERS](./Multitask/M13-FEDMES- SPEEDING-UP-FEDERATED LEARNING-WITH MULTIPLE-EDGE-SERVERS.pdf)
 
 The goal is for faster convergence especially under non-iid. The key idea is to utilize the devices located in the overlapping areas between the coverage of edge servers; in the model-downloading stage, the devices in the overlapping areas receive multiple models from different edge servers, take the average of the received models, and then update the model with their local data. These devices send their updated model to multiple edge servers by broadcasting, which acts as bridges for sharing the trained models between servers.
 
 <img src="./imgs/M13-1.png" width = "100%" align="absmiddle"/>
+
+- what: speeding up convergence of multiple edge servers 
+- where: cars and drones which need fast adaption 
+- why: for latency-sensitive edge-based FL applications, there are an insufficient number of or biased clients within the coverage of an edge server for training a global model with enough accuracy.
+- how:  clients located in the overlapping areas between the coverage of ESs receive multiple edge models and train and send back the models.
+- paper: algorithm description, lactency analysis, convergence bound. 
+- experiments: dataset=(mnist fashion cifar), L=3, K=90, S=60 (overlap/nonlap),
 
 
 [M14] [Multi-center federated learning]()
