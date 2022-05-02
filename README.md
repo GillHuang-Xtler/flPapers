@@ -11,7 +11,7 @@ Conferences and Journals Collection for Federated Learning from 2019 to 2021. Fo
 | [AISTATS](./conferences/aistats.md) | - | 3 | 7 | 
 | [ICLR](./conferences/iclr.md) | - | 4 | 10 | 
 | [KDD](./conferences/kdd.md) | - | 2 | -  | 
-| [INFOCOM](./conferences/infocom.md) | 2 |7  | -  | 
+| [INFOCOM](./conferences/infocom.md) | 2 |7  | 13 | 
 | [ICML](./conferences/icml.md)| 4 |  6 |  18 | 
 | [MOBICOM](./conferences/mobicom.md) | - | 1 | - | 
 | [NeurIPS](./conferences/neurips.md) | - | 17 | 32 | 
@@ -110,7 +110,7 @@ Conferences and Journals Collection for Federated Learning from 2019 to 2021. Fo
 | AISTATS | - | Privacy, Efficiency, Robustness | Optimization, Robustness, Privacy, Compression, Personalization | 
 | ICLR | - | Aggregation, Robustness, Optimization | Efficiency, Aggregation, Semi-Supervised Learning, Heterogeneous, Optimization, Personalization | 
 | KDD | - | Optimization, NLP |   | 
-| INFOCOM | Privacy, Edge | Robustness,  Heterogeneous, Edge, Optimization, Security |   | 
+| INFOCOM | Privacy, Edge | Robustness,  Heterogeneous, Edge, Optimization, Security | Edge, heterogeneity, Incentive, effeciency, Aggregation,  | 
 | ICML | Aggregation, Optimization, Robustness, Incentive|  Heterogeneous, Efficiency, Optimization | Privacy, Personalization, Optimization, Heterogeneous, Clients Selection, Robustness | 
 | MOBICOM | - | Efficiency, Privacy |   | 
 | NeurIPS | - | Robustness, Optimization, Efficiency, Aggregation,  Personalization, Meta-Learning,  Split Learning|   | 

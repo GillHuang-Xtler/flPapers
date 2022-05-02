@@ -122,5 +122,9 @@ It proposes a novel multi-center aggregation mechanism . It learns multiple glob
 
 #### Possible direction and conclusion
 - Soving Non-iid only is not a good choice
-- Consider the cooperation of multiple servers, e.g.,
+- Consider the cooperation of multiple servers
+
+#### Targeted outcome
+- page limit: 9 pages excluding references
+- 
 
